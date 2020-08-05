@@ -1,0 +1,164 @@
+.modal {
+  width: 480px;
+  max-width: 100%;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  border-radius: 4px;
+  
+  .button {
+    color: #fff;
+    background-color: #292828;
+
+    &:hover,
+    &:active {
+      color: #141111;
+      background-color: rgba(255,255,255,0);
+      .transition();
+    }
+  }
+}
+
+.added-to-cart__cross,
+.checkbox__input,
+.modal__close {
+  display: none;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #010315;
+}
+
+.modal__footer,
+.modal__body,
+.modal__header {
+  padding: 24px 32px;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.modal__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.field-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  border: 1px solid #2b2a2a;
+  border-radius: 3px;
+}
+
+.modal__links {
+  text-align: center;
+}
+
+.modal__links a {
+  margin-right: 15px;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.modal__footer {
+  .button {
+    display: flex;
+    margin: 10px auto;
+  }
+}
+
+.checkbox__label {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 30px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #2b2a2a;
+  }
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+  content: "\2713";
+  background-color: #2b2a2a;
+}
+
+.added-to-cart__marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #2BB622;
+}
+
+.added-to-cart__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .button {
+    width: 45%;
+  }
+  
+  .button--view_inverse {
+    padding: 0;
+    background-color: rgba(255,255,255,0);
+    color: #141111;
+    
+    &:hover,
+    &:active {
+      color: #fff;
+      background-color: #292828;
+      .transition();
+    }
+  }
+}
+
+.added-to-cart__image {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  border: 1px solid #292828;
+  border-radius: 4px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 100%;
+  }
+}
+
+.added-to-cart__body {
+  display: flex;
+  align-items: center;
+}
