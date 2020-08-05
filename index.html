@@ -15,7 +15,8 @@
   <meta name="format-detection" content="address=no">
   <meta name="format-detection" content="email=no">
   <meta content="notranslate" name="google">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
@@ -268,16 +269,32 @@
         <input type="hidden" name="banner_id" value="0">
       </form>
       
-      <div class="slider  index__slider">
-        <div class="slider__list" style="display:none" data-slick='{"speed": 500, "autoplaySpeed": 9000, "autoplay": 1}'>
-          <div class="slider__container">
-            <img src="http://atlaskit.ru/userfls/bs/a_mg12475_18.jpg" alt="" title="">
+      <section class="slider">
+        <div class="swiper-container slider__promo">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slider__block" style="background-image:url(img/images/a_mg12475_18.jpg);">
+              <div class="wrapper">
+                <div class="slider__info">
+                  <p class="slider__title">Заголовок миниатюры</p>
+                  <p class="slider__text">Fascinantes puzzles 3D Robotime para armar mini espacios cautivadores. Despachos a domicilio</p>
+                  <a href="#" class="btn slider__btn">Смотреть</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slider__block" style="background-image:url(img/images/a_mg10772_16.jpg);">
+              <div class="wrapper">
+                <div class="slider__info">
+                  <p class="slider__title">Casitas miniaturas</p>
+                  <p class="slider__text">Fascinantes puzzles 3D Robotime para armar mini espacios cautivadores. Despachos a domicilio</p>
+                  <a href="#" class="btn slider__btn">Смотреть</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="slider__container">
-            <img src="http://atlaskit.ru/userfls/bs/a_mg10772_16.jpg" alt="" title="">
-          </div>
+          <div class="swiper-button-prev slider__prev">&lsaquo;</div>
+          <div class="swiper-button-next slider__next">&rsaquo;</div>
         </div>
-      </div>
+      </section>
       
       <section class="categories-block  index__categories-block">
         <h2 class="categories-block__title">Категории</h2>
@@ -847,6 +864,7 @@
     <script src="js/svg4everybody.min.js"></script>
     <script src="js/script.min.js"></script>
     <script src="js/custom_js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     
     <nav class="hc-offcanvas-nav hc-nav-1 nav-levels-overlap nav-position-left disable-body" style="">
       <div class="nav-container">
@@ -882,6 +900,20 @@
         </div>
       </div>
     </nav>
+    
+    <!-- Sliders -->
+    <script>
+      var mySwiper = new Swiper ('.slider__promo', {
+        navigation: {
+          nextEl: '.slider__next',
+          prevEl: '.slider__prev',
+        },
+        simulateTouch: false,
+        preventClicks: false,
+        preventClicksPropagation: false,
+        autoplay: true,
+      });
+    </script>
   </div>
 </body>
 </html>
