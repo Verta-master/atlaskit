@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
@@ -268,502 +268,246 @@
       </nav>
     </header>
 
-    <div class="page__content  grid  grid--with-sidebar">
+    <div class="page__content  grid  grid--without-sidebar">
       <div class="page__wrapper">
-        <div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
-          <span class="breadcrumb__item" typeof="v:Breadcrumb">
-            <a href="http://atlaskit.ru/" rel="v:url" property="v:title">Главная</a> 
-            <span class="breadcrumb__separator">
-              <svg class="breadcrumb__icon" width="8" height="8">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
-              </svg>
-            </span> 
-          </span>
-          <span class="breadcrumb__item" typeof="v:Breadcrumb">
-            <a href="http://atlaskit.ru/catalog/" rel="v:url" property="v:title">Каталог</a> 
-            <span class="breadcrumb__separator">
-              <svg class="breadcrumb__icon" width="8" height="8">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
-              </svg>
-            </span> 
-          </span> 
-          <span class="breadcrumb__item" typeof="v:Breadcrumb">Музыкальные деревянные заводные игрушки Wooderful life</span>
-        </div>
-        
-        <h1 class="page__title">Музыкальные деревянные заводные игрушки Wooderful life</h1>
         <div class="page__row">
-          <aside class="page__sidebar">
-            <div class="filter  page__filter">
-              <button class="filter__toggle  button  button--size_s">
-                <div class="button__wrapper">
-                  <svg class="button__icon" width="16" height="16">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#filter-icon"></use>
+          <main class="page__main" role="main">
+            <div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
+              <span class="breadcrumb__item" typeof="v:Breadcrumb">
+                <a href="http://atlaskit.ru/" rel="v:url" property="v:title">Главная</a> 
+                <span class="breadcrumb__separator">
+                  <svg class="breadcrumb__icon" width="8" height="8">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
                   </svg>
-                  <span class="button__text">Фильтр по параметрам</span>
-                </div>
-              </button>
-              <div class="filter__wrapper">
-                <div class="filter__header">
-                  <h2 class="filter__title">Фильтр по параметрам</h2>
-                </div>
-                <form method="GET" action="http://atlaskit.ru/catalog/derevyannye-igrushki/" class="filter__body  js_shop_search_form">
-                  <input type="hidden" name="module" value="shop">
-                  <input type="hidden" name="action" value="search">
-                  <input name="cat_id" type="hidden" value="20">
-                  <section class="filter__section">
-                    <h3 class="filter__name">Цена</h3>
-                    <div class="filter__options">
-                      <div class="filter__price">
-                        <input class="filter__from  field-input" type="text" id="amount-min" name="pr1" value="0">
-                        <div class="filter__separator">—</div>
-                        <input class="filter__to  field-input" type="text" id="amount-max" name="pr2" value="5500">
-                      </div>
-                      <div class="filter__max-price">
-                        <div>0</div>
-                        <div>5500</div>
-                      </div>
-<!--                      <div class="filter__slider" data-min="0" data-max="5500"></div>-->
-                      <div class="filter__range">
-                        <div id="slider-range"></div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="filter__section">
-                    <h3 class="filter__name">Артикул</h3>
-                    <div class="filter__options">
-                      <input class="field-input" type="text" name="a" value="">
-                    </div>
-                  </section>
-                  <section class="filter__section">
-                    <h3 class="filter__name">Производитель</h3>
-                    <div class="filter__options  filter__checkbox-group">
-                      <div class="checkbox  filter__checkbox  js_shop_search_brand" site_id="154">
-                        <input class="checkbox__input" type="checkbox" name="brand[]" value="11" id="shop_search_brand11">
-                        <label class="checkbox__label" for="shop_search_brand11">Wooderful life</label>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="filter__section">
-                    <div class="filter__options">
-                      <div class="checkbox filter__checkbox">
-                        <input class="checkbox__input" type="checkbox" name="ac" id="shop_search_ac" value="1">
-                        <label class="checkbox__label" for="shop_search_ac">Товар по акции</label>
-                      </div>
-                      <div class="checkbox filter__checkbox">
-                        <input class="checkbox__input" type="checkbox" name="ne" id="shop_search_ne" value="1">
-                        <label class="checkbox__label" for="shop_search_ne">Новинка</label>
-                      </div>
-                      <div class="checkbox filter__checkbox">
-                        <input class="checkbox__input" type="checkbox" name="hi" id="shop_search_hit" value="1">
-                        <label class="checkbox__label" for="shop_search_hit">Хит</label>
-                      </div>
-                    </div>
-                  </section>
-                  <div class="filter__bottom">
-                    <button class="button  button--size_s">Подобрать</button>
-                  </div>
-                </form>
-              </div>
+                </span> 
+              </span>
+              <span class="breadcrumb__item" typeof="v:Breadcrumb">
+                <a href="http://atlaskit.ru/catalog/" rel="v:url" property="v:title">Каталог</a> 
+                <span class="breadcrumb__separator">
+                  <svg class="breadcrumb__icon" width="8" height="8">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+                  </svg>
+                </span> 
+              </span>
+              <span class="breadcrumb__item" typeof="v:Breadcrumb">
+                <a href="http://atlaskit.ru/catalog/derevyannye-igrushki/" rel="v:url" property="v:title">Музыкальные деревянные заводные игрушки Wooderful life</a> 
+                <span class="breadcrumb__separator">
+                  <svg class="breadcrumb__icon" width="8" height="8">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+                  </svg>
+                </span> 
+              </span> 
+              <span class="breadcrumb__item" typeof="v:Breadcrumb">Бременские музыканты</span>
             </div>
-          </aside>
-
-          <main class="page__main  page__main--with-sidebar" role="main">
-            <div class="catalog">
-              <div class="js_shop_list shop_list">
-                <div class="catalog__products-view">
-                  <div class="sorting">
-                    <div class="sorting__label">Сортировка:</div>
-                    <ul class="sorting__list">
-                      <li class="sorting__item">
-                        <a class="sorting__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/sort1/">Цена</a>
-                        <div class="sorting__icon  sorting__icon--down">
-                          <svg width="8" height="8">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="sorting__item">
-                        <a class="sorting__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/sort3/">Наименование товара</a>
-                        <div class="sorting__icon  sorting__icon--down">
-                          <svg width="8" height="8">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
-                          </svg>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="view-switch  catalog__view-switch">
-                    <div class="view-switch__wrapper">
-                      <button class="view-switch__grid  view-switch__button  view-switch__button--active">
-                        <div class="view-switch__inner">
-                          <svg width="16" height="16">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#grid-icon"></use>
-                          </svg>
-                          <div class="view-switch__label">плитка</div>
-                        </div>
-                      </button>
-                      <button class="view-switch__list  view-switch__button  ">
-                        <div class="view-switch__inner">
-                          <svg width="16" height="16">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#list-icon"></use>
-                          </svg>
-                          <div class="view-switch__label">список</div>
-                        </div>
-                      </button>
+            
+            <h1 class="page__title">Бременские музыканты</h1>
+            <div class="product-card  page__product-card  js_shop_id js_shop" itemscope itemtype="http://schema.org/Product">
+              <meta itemprop="name" content="Бременские музыканты" />
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="price" content="2100">
+                <meta itemprop="priceCurrency" content="RUB">
+                <meta itemprop="availability" content="https://schema.org/InStock" />
+              </div>
+              <div class="product-card__top">
+                <div class="product-gallery product-card__product-gallery">
+                  <ul class="product-label  product-gallery__product-label"></ul>
+                  <button class="to-favorites  product-gallery__to-favorites    js_shop_wishlist">
+                    <svg class="to-favorites__icon" width="16" height="16">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
+                    </svg>
+                  </button>
+                  <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide gallery-slide">
+                        <video width="100%" height="100%" controls="controls" autoplay>
+                          <source src="http://atlaskit.ru/userfls/ufiles/26_Trim.mp4" type="video/mp4" />
+                        </video>
+                      </div>
+                      <div class="swiper-slide gallery-slide">
+                        <a class="js_shop_img shop-item-image active" href="http://atlaskit.ru/userfls/shop/large/198_bremenskie-muzykanty.jpg" data-fancybox="gallery36shop" image_id="198">
+                          <img src="img/images/195_mishka-kataetsya-na-konkakh.jpg" alt="Бременские музыканты" title="Бременские музыканты" image_id="198" itemprop="image">
+                        </a>
+                      </div>
                     </div>
                   </div>
+                  <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide gallery-thumb">
+                        <img class="js_shop_preview_img" src="img/images/video.png" image_id="198" alt="">
+                      </div>
+                      <div class="swiper-slide gallery-thumb">
+                        <img src="img/images/195_mishka-kataetsya-na-konkakh.jpg" alt="Бременские музыканты" title="Бременские музыканты" image_id="198" itemprop="image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev gallery-prev"></div>
+                  <div class="swiper-button-next gallery-next"></div>
                 </div>
                 
-                <div class="grid  grid--with-sidebar  page__row">
-                  <div class="product-block  grid__item  js_shop   ">
-                    <div class="product-block__image">
-                      <ul class="product-label  product-block__product-label">
-                        <li class="product-label__item  product-label__item--hit">Хит</li>
-                      </ul>
-                      <button class="to-favorites  product-block__to-favorites    js_shop_wishlist">
-                        <svg class="to-favorites__icon" width="16" height="16">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
-                        </svg>
-                      </button>
-                      <a class="product-block__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/zubastiki-s-podarkami/">
-                        <img src="img/images/194_zubastiki-s-podarkami.jpg" alt="Зубастики с подарками" title="Зубастики с подарками" image_id="194" class="js_shop_img" style="display: block">
-                      </a> 
-                    </div>
-                    <div class="product-block__info">
-                      <a class="product-block__title" href="http://atlaskit.ru/catalog/derevyannye-igrushki/zubastiki-s-podarkami/">Зубастики с подарками</a>
-                    </div>
-                    <form class="product-block__buy  js_shop_form shop_form ajax" method="post" action="">
-                      <input type="hidden" name="good_id" value="40">
-                      <input type="hidden" name="module" value="shop">
-                      <input type="hidden" name="action" value="">
-                      <div class="product-block__parameters">
-                        <span class="js_shop_form_param shop_form_param"></span>
-                      </div>
-                      <div class="product-block__prices  js_shop_param_price shop_param_price shop-item-price"  >
-                        <div class="product-block__price">
-                          <span class="js_shop_price" summ="3500" format_price_1="2" format_price_2="," format_price_3="">3500</span> руб.
-                        </div>
-                      </div>
-                      <input type="hidden" value="1" name="count" class="number" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
-                      <div class="product-block__buttons  js_shop_buy shop_buy to-cart">
-                        <input type="button" class="product-block__button button  button--size_s" value="В корзину" action="buy">
-                      </div>
-                    </form>
+                <div class="product-card__center">
+                  <div class="product-card__info">
+                    <div class="product-card__vendor-code">Артикул: <span itemprop="sku">1060611</span></div>
+                    <div class="product-card__producer">Производитель: <a class="link" href="http://atlaskit.ru/catalog/elbasco-toys/"><span itemprop="brand">Wooderful life</span></a></div>
                   </div>
-                  <div class="product-block  grid__item  js_shop   ">
-                    <div class="product-block__image">
-                      <ul class="product-label  product-block__product-label">
-                        <li class="product-label__item  product-label__item--hit">Хит</li>
-                      </ul>
-                      <button class="to-favorites  product-block__to-favorites    js_shop_wishlist">
-                        <svg class="to-favorites__icon" width="16" height="16">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
-                        </svg>
-                      </button>
-                      <a class="product-block__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/mishka-kataetsya-na-konkakh/">
-                        <img src="img/images/195_mishka-kataetsya-na-konkakh.jpg" alt="Мишка катается на коньках" title="Мишка катается на коньках" image_id="195" class="js_shop_img" style="display: block">
-                      </a> 
-                    </div>
-                    <div class="product-block__info">
-                      <a class="product-block__title" href="http://atlaskit.ru/catalog/derevyannye-igrushki/mishka-kataetsya-na-konkakh/">Мишка катается на коньках</a>
-                    </div>
-                    <form class="product-block__buy  js_shop_form shop_form ajax" method="post" action="">
-                      <input type="hidden" name="good_id" value="39">
-                      <input type="hidden" name="module" value="shop">
-                      <input type="hidden" name="action" value="">
-                      <div class="product-block__parameters">
-                        <span class="js_shop_form_param shop_form_param"></span>
-                      </div>
-                      <div class="product-block__prices  js_shop_param_price shop_param_price shop-item-price"  >
-                        <div class="product-block__price">
-                          <span class="js_shop_price" summ="3500" format_price_1="2" format_price_2="," format_price_3="">3500</span> руб.
-                        </div>
-                      </div>
-                      <input type="hidden" value="1" name="count" class="number" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
-                      <div class="product-block__buttons  js_shop_buy shop_buy to-cart">
-                        <input type="button" class="product-block__button button  button--size_s" value="В корзину" action="buy">
-                      </div>
-                    </form>
-                  </div>
-                  <div class="product-block  grid__item  js_shop   ">
-                    <div class="product-block__image">
-                      <ul class="product-label  product-block__product-label">
-                        <li class="product-label__item  product-label__item--hit">Хит</li>
-                      </ul>
-                      <button class="to-favorites  product-block__to-favorites    js_shop_wishlist">
-                        <svg class="to-favorites__icon" width="16" height="16">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
-                        </svg>
-                      </button>
-                      <a class="product-block__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/koleso-obozreniya-rozhdestvo/">
-                        <img src="img/images/196_koleso-obozreniya-rozhdestvo.jpg" alt="Колесо обозрения Рождество" title="Колесо обозрения Рождество" image_id="196" class="js_shop_img" style="display: block">
-                      </a> 
-                    </div>
-                    <div class="product-block__info">
-                      <a class="product-block__title" href="http://atlaskit.ru/catalog/derevyannye-igrushki/koleso-obozreniya-rozhdestvo/">Колесо обозрения Рождество</a>
-                    </div>
-                    <form class="product-block__buy  js_shop_form shop_form ajax" method="post" action="">
-                      <input type="hidden" name="good_id" value="38">
-                      <input type="hidden" name="module" value="shop">
-                      <input type="hidden" name="action" value="">
-                      <div class="product-block__parameters">
-                        <span class="js_shop_form_param shop_form_param"></span>
-                      </div>
-                      <div class="product-block__prices  js_shop_param_price shop_param_price shop-item-price"  >
-                        <div class="product-block__price">
-                          <span class="js_shop_price" summ="5400" format_price_1="2" format_price_2="," format_price_3="">5400</span> руб.
-                        </div>
-                      </div>
-                      <input type="hidden" value="1" name="count" class="number" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
-                      <div class="product-block__buttons  js_shop_buy shop_buy to-cart">
-                        <input type="button" class="product-block__button button  button--size_s" value="В корзину" action="buy">
-                      </div>
-                    </form>
-                  </div>
-                  <div class="product-block  grid__item  js_shop   ">
-                    <div class="product-block__image">
-                      <ul class="product-label  product-block__product-label">
-                        <li class="product-label__item  product-label__item--hit">Хит</li>
-                      </ul>
-                      <button class="to-favorites  product-block__to-favorites    js_shop_wishlist">
-                        <svg class="to-favorites__icon" width="16" height="16">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
-                        </svg>
-                      </button>
-                      <a class="product-block__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/schelkunchik/">
-                        <img src="img/images/194_zubastiki-s-podarkami.jpg" alt="Щелкунчик" title="Щелкунчик" image_id="197" class="js_shop_img" style="display: block">
-                      </a> 
-                    </div>
-                    <div class="product-block__info">
-                      <a class="product-block__title" href="http://atlaskit.ru/catalog/derevyannye-igrushki/schelkunchik/">Щелкунчик</a>
-                    </div>
-                    <form class="product-block__buy  js_shop_form shop_form ajax" method="post" action="">
-                      <input type="hidden" name="good_id" value="37">
-                      <input type="hidden" name="module" value="shop">
-                      <input type="hidden" name="action" value="">
-                      <div class="product-block__parameters">
-                        <span class="js_shop_form_param shop_form_param"></span>
-                      </div>
-                      <div class="product-block__prices  js_shop_param_price shop_param_price shop-item-price"  >
-                        <div class="product-block__price">
-                          <span class="js_shop_price" summ="3500" format_price_1="2" format_price_2="," format_price_3="">3500</span> руб.
-                        </div>
-                      </div>
-                      <input type="hidden" value="1" name="count" class="number" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
-                        <div class="product-block__buttons  js_shop_buy shop_buy to-cart">
-                          <input type="button" class="product-block__button button  button--size_s" value="В корзину" action="buy">
-                        </div>
-                    </form>
-                  </div>
-                  <div class="product-block  grid__item  js_shop   ">
-                    <div class="product-block__image">
-                      <ul class="product-label  product-block__product-label"></ul>
-                      <button class="to-favorites  product-block__to-favorites    js_shop_wishlist">
-                        <svg class="to-favorites__icon" width="16" height="16">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
-                        </svg>
-                      </button>
-                      <a class="product-block__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/bremenskie-muzykanty/">
-                        <img src="img/images/194_zubastiki-s-podarkami.jpg" alt="Бременские музыканты" title="Бременские музыканты" image_id="198" class="js_shop_img" style="display: block">
-                      </a> 
-                    </div>
-                    <div class="product-block__info">
-                      <a class="product-block__title" href="http://atlaskit.ru/catalog/derevyannye-igrushki/bremenskie-muzykanty/">Бременские музыканты</a>
-                    </div>
-                    <form class="product-block__buy  js_shop_form shop_form ajax" method="post" action="">
-                      <input type="hidden" name="good_id" value="36">
-                      <input type="hidden" name="module" value="shop">
-                      <input type="hidden" name="action" value="">
-                      <div class="product-block__parameters">
-                        <span class="js_shop_form_param shop_form_param"></span>
-                      </div>
-                      <div class="product-block__prices  js_shop_param_price shop_param_price shop-item-price"  >
-                        <div class="product-block__price">
-                          <span class="js_shop_price" summ="2100" format_price_1="2" format_price_2="," format_price_3="">2100</span> руб.
-                        </div>
-                      </div>
-                      <input type="hidden" value="1" name="count" class="number" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
-                      <div class="product-block__buttons  js_shop_buy shop_buy to-cart">
-                        <input type="button" class="product-block__button button  button--size_s" value="В корзину" action="buy">
-                      </div>
-                    </form>
-                  </div>
-                  <div class="product-block  grid__item  js_shop   ">
-                    <div class="product-block__image">
-                      <ul class="product-label  product-block__product-label">
-                        <li class="product-label__item  product-label__item--hit">Хит</li>
-                      </ul>
-                      <button class="to-favorites  product-block__to-favorites    js_shop_wishlist">
-                        <svg class="to-favorites__icon" width="16" height="16">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
-                        </svg>
-                      </button>
-                      <a class="product-block__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/lyubov-pod-zontom/">
-                        <img src="img/images/194_zubastiki-s-podarkami.jpg" alt="Любовь под зонтом" title="Любовь под зонтом" image_id="199" class="js_shop_img" style="display: block">
-                      </a> 
-                    </div>
-                    <div class="product-block__info">
-                      <a class="product-block__title" href="http://atlaskit.ru/catalog/derevyannye-igrushki/lyubov-pod-zontom/">Любовь под зонтом</a>
-                    </div>
-                    <form class="product-block__buy  js_shop_form shop_form ajax" method="post" action="">
-                      <input type="hidden" name="good_id" value="35">
-                      <input type="hidden" name="module" value="shop">
-                      <input type="hidden" name="action" value="">
-                        <div class="product-block__parameters">
-                          <span class="js_shop_form_param shop_form_param"></span>
-                        </div>
-                        <div class="product-block__prices  js_shop_param_price shop_param_price shop-item-price"  >
-                          <div class="product-block__price">
-                            <span class="js_shop_price" summ="3300" format_price_1="2" format_price_2="," format_price_3="">3300</span> руб.
-                          </div>
-                        </div>
-                        <input type="hidden" value="1" name="count" class="number" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
-                        <div class="product-block__buttons  js_shop_buy shop_buy to-cart">
-                          <input type="button" class="product-block__button button  button--size_s" value="В корзину" action="buy">
-                        </div>
-                      </form>
-                    </div>
-                  <div class="product-block  grid__item  js_shop   ">
-                    <div class="product-block__image">
-                      <ul class="product-label  product-block__product-label">
-                        <li class="product-label__item  product-label__item--hit">Хит</li>
-                      </ul>
-                      <button class="to-favorites  product-block__to-favorites    js_shop_wishlist">
-                        <svg class="to-favorites__icon" width="16" height="16">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
-                        </svg>
-                      </button>
-                      <a class="product-block__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/blagoslovenie-kota/">
-                        <img src="img/images/194_zubastiki-s-podarkami.jpg" alt="Благословение кота" title="Благословение кота" image_id="200" class="js_shop_img" style="display: block">
-                      </a> 
-                    </div>
-                    <div class="product-block__info">
-                      <a class="product-block__title" href="http://atlaskit.ru/catalog/derevyannye-igrushki/blagoslovenie-kota/">Благословение кота</a>
-                    </div>
-                    <form class="product-block__buy  js_shop_form shop_form ajax" method="post" action="">
-                      <input type="hidden" name="good_id" value="34">
-                      <input type="hidden" name="module" value="shop">
-                      <input type="hidden" name="action" value="">
-                      <div class="product-block__parameters">
-                        <span class="js_shop_form_param shop_form_param"></span>
-                      </div>
-                      <div class="product-block__prices  js_shop_param_price shop_param_price shop-item-price"  >
-                      <div class="product-block__price">
-                        <span class="js_shop_price" summ="3300" format_price_1="2" format_price_2="," format_price_3="">3300</span> руб.
-                      </div>
-                    </div>
-                    <input type="hidden" value="1" name="count" class="number" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
-                      <div class="product-block__buttons  js_shop_buy shop_buy to-cart">
-                        <input type="button" class="product-block__button button  button--size_s" value="В корзину" action="buy">
-                      </div>
-                    </form>
-                  </div>
-                  <div class="product-block  grid__item  js_shop   ">
-                    <div class="product-block__image">
-                      <ul class="product-label  product-block__product-label"></ul>
-                      <button class="to-favorites  product-block__to-favorites    js_shop_wishlist">
-                        <svg class="to-favorites__icon" width="16" height="16">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
-                        </svg>
-                      </button>
-                      <a class="product-block__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/dostavka-aista/">
-                        <img src="img/images/194_zubastiki-s-podarkami.jpg" alt="Доставка аиста" title="Доставка аиста" image_id="201" class="js_shop_img" style="display: block">
-                      </a> 
-                    </div>
-                    <div class="product-block__info">
-                      <a class="product-block__title" href="http://atlaskit.ru/catalog/derevyannye-igrushki/dostavka-aista/">Доставка аиста</a>
-                    </div>
-                    <form class="product-block__buy  js_shop_form shop_form ajax" method="post" action="">
-                      <input type="hidden" name="good_id" value="33">
-                      <input type="hidden" name="module" value="shop">
-                      <input type="hidden" name="action" value="">
-                      <div class="product-block__parameters">
-                        <span class="js_shop_form_param shop_form_param"></span>
-                      </div>
-                      <div class="product-block__prices  js_shop_param_price shop_param_price shop-item-price"  >
-                        <div class="product-block__price">
-                          <span class="js_shop_price" summ="3300" format_price_1="2" format_price_2="," format_price_3="">3300</span> руб.
-                        </div>
-                      </div>
-                      <input type="hidden" value="1" name="count" class="number" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
-                      <div class="product-block__buttons  js_shop_buy shop_buy to-cart">
-                        <input type="button" class="product-block__button button  button--size_s" value="В корзину" action="buy">
-                      </div>
-                    </form>
-                  </div>
-                  <div class="product-block  grid__item  js_shop   ">
-                    <div class="product-block__image">
-                      <ul class="product-label  product-block__product-label"></ul>
-                      <button class="to-favorites  product-block__to-favorites    js_shop_wishlist">
-                        <svg class="to-favorites__icon" width="16" height="16">
-                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorites-icon"></use>
-                        </svg>
-                      </button>
-                      <a class="product-block__link" href="http://atlaskit.ru/catalog/derevyannye-igrushki/32/">
-                        <img src="img/images/194_zubastiki-s-podarkami.jpg" alt="Младенец" title="Младенец" image_id="202" class="js_shop_img" style="display: block">
-                      </a> 
-                    </div>
-                    <div class="product-block__info">
-                      <a class="product-block__title" href="http://atlaskit.ru/catalog/derevyannye-igrushki/32/">Младенец</a>
-                    </div>
-                    <form class="product-block__buy  js_shop_form shop_form ajax" method="post" action="">
-                      <input type="hidden" name="good_id" value="32">
-                      <input type="hidden" name="module" value="shop">
-                      <input type="hidden" name="action" value="">
-                      <div class="product-block__parameters">
-                        <span class="js_shop_form_param shop_form_param"></span>
-                      </div>
-                      <div class="product-block__prices  js_shop_param_price shop_param_price shop-item-price"  >
-                        <div class="product-block__price">
-                          <span class="js_shop_price" summ="3500" format_price_1="2" format_price_2="," format_price_3="">3500</span> руб.
-                        </div>
-                      </div>
-                      <input type="hidden" value="1" name="count" class="number" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
-                      <div class="product-block__buttons  js_shop_buy shop_buy to-cart">
-                        <input type="button" class="product-block__button button  button--size_s" value="В корзину" action="buy">
-                      </div>
-                    </form>
-                  </div>
-
-                  <form method="POST" action="http://atlaskit.ru/catalog/derevyannye-igrushki/page2/" class="show-more  catalog__show-more  js_paginator_more_form ajax">
-                    <input type="hidden" name="more" value="1">
-                    <input type="hidden" name="uid" value="E37C1237">
-                    <input type="hidden" name="mode" value="model">
+                  <form class="product-card__form  js_shop_form shop_form ajax" method="post" action="">
+                    <input type="hidden" name="good_id" value="36">
                     <input type="hidden" name="module" value="shop">
-                    <input type="hidden" name="action" value="list_">
-                    <div class="show-more__wraper"><input type="submit" value="Показать ещё" class="show-more__button  button  button--view_inverse js_paginator_more_button"></div>
+                    <input type="hidden" name="action" value="">
+                    <span class="js_shop_form_param shop_form_param"></span>
+                    <div class="product-card__prices  js_shop_param_price shop_param_price shop-item-price"  >
+                      <div class="product-card__price">
+                        <span class="js_shop_price" summ="2100" format_price_1="2" format_price_2="," format_price_3="">2100</span> руб.
+                      </div>
+                    </div>
+                    <div class="product-card__buttons  js_shop_buy shop_buy to-cart">
+                      <div class="num  product-card__num">
+                        <div class="num__minus">
+                          <svg width="10" height="2"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#minus"></use></svg>
+                        </div>
+                        <input type="text" class="num__text-field" name="count" value="1" inputmode="numeric" pattern="[0-9]+([\.|,][0-9]+)?" step="any">
+                        <div class="num__plus">
+                          <svg width="10" height="10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plus"></use></svg>
+                        </div>
+                      </div>
+                      <input type="button" class="button  product-card__to-cart" value="В корзину" action="buy">
+<!--                      <input class="button  button--view_inverse  product-card__one-click" type="button" data-target="#modal-one-click" data-toggle="modal" value="Купить в 1 клик" action="one_click">-->
+                      <a data-fancybox data-src="#modal-one-click" href="javascript:;" class="button product-card__one-click">Купить в 1 клик</a>
+                    </div>
+                    <div class="visually-hidden  error" style="display:none;"></div>
                   </form>
-                </div>
+                  <div style="display: none;" id="modal-one-click" class="modal" tabindex="-1" role="dialog">
+                    <div class="modal__dialog" role="document">
+                      <button type="button" class="modal__close " data-dismiss="modal">
+                        <svg class="modal__cross" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cross"></use></svg>
+                      </button>
+                      <div class="modal__content">
+                        <div class="modal__header">
+                          <h2 class="modal__title">Быстрый заказ</h2>
+                        </div>
+                        <form method="POST" action="" class="form  js_cart_one_click_form  ajax" enctype="multipart/form-data">
+                          <input type="hidden" name="module" value="cart">
+                          <input type="hidden" name="action" value="one_click">
+                          <input type="hidden" name="form_tag" value="cart_one_click">
+                          <input type="hidden" name="good_id" value="36">
+                          <input type="hidden" name="tmpcode" value="b1b20d09041289e6c3fbb81850c5da54">
+                          <div class="modal__body">
+                            <div class="modal__field-block">
+                              <label class="modal__label" for="p1">Ф.И.О.<span>*</span></label>
+                              <input class="field-input" type="text" name="p1" id="p1" value="">
+                            </div>
+                            <div class="form__error  errors error_p1" style="display:none"></div>
+                            <div class="modal__field-block">
+                              <label class="modal__label" for="p3">Контактный телефон<span>*</span></label>
+                              <input class="field-input" type="tel" name="p3" id="p3" value="">
+                            </div>
+                            <div class="form__error  errors error_p3" style="display:none"></div>
+                              <div class="form__field-block  form__field-block--age">
+                                <label class="form__label" for="age">Возраст</label>
+                                <input class="field-input  form__field" name="age" id="age" type="text" placeholder="Возраст">
+                              </div>
+                          </div>
+                          <div class="modal__footer  modal__footer--background_image">
+                            <div class="checkbox  modal__checkbox  form__control  form__control--line">
+                              <input id="privacy-75828" name="privacy" class="checkbox__input" type="checkbox">
+                              <label class="checkbox__label" for="privacy-75828">Я согласен на <a class="link" href="http://atlaskit.ru/privacy/" target="_blanck">обработку персональных данных</a>.</label>
+                              <div class="form__error  errors  error_privacy"></div>
+                            </div>
+                            <input class="button" type="button" value="Оформить заказ">
+                            <div class="form__error  errors error" style="display:none"></div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
 
-                <div class="catalog__paginator">
-                  <div class="paginator" uid="E37C1237">
-                    <div class="paginator__wrapper">
-                      <span class="paginator__item  paginator__item--active">1</span> 
-                      <a class="paginator__item" href="http://atlaskit.ru/catalog/derevyannye-igrushki/page2/">2</a> 
-                      <a class="paginator__item" href="http://atlaskit.ru/catalog/derevyannye-igrushki/page3/">3</a>
-                      <a class="paginator__item  paginator__end" href="http://atlaskit.ru/catalog/derevyannye-igrushki/page3/">
-                        <svg class="paginator__icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dropdown-arrow"></use></svg>
-                      </a> 
+                  <ul class="social-likes  product-card__social-likes" data-counters="no">
+                    <li class="social-likes__label">Поделиться:</li>
+                    <li class="social-likes__vkontakte  social-likes__item  vkontakte" title="Поделиться ссылкой во Вконтакте">
+                      <svg class="social-likes__icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-vk"></use></svg>
+                    </li>
+                    <li class="social-likes__facebook  social-likes__item  facebook" title="Поделиться ссылкой на Фейсбуке">
+                      <svg class="social-likes__icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-fb"></use></svg>
+                    </li>
+                    <li class="social-likes__odnoklassniki  social-likes__item  odnoklassniki" title="Поделиться ссылкой в Одноклассниках">
+                      <svg class="social-likes__icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-ok"></use></svg>
+                    </li>
+                    <li class="social-likes__twitter  social-likes__item  twitter" title="Поделиться ссылкой в Твиттере">
+                      <svg class="social-likes__icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-twitter"></use></svg>
+                    </li>
+                  </ul>
+                </div>
+                <div style="clear:both;"></div>
+                <br>
+                <br>
+                <br>
+                <div class="tabs  product-card__tabs">
+                  <nav class="tabs__header"><a class="tabs__nav" href="#tab-parameters">Характеристики</a></nav>
+                    <div class="tabs__body">
+                      <div class="tabs__tab" id="tab-parameters">
+                        <div class="parameters">
+                          <ul class="parameters__list">
+                            <li class="parameters__item">
+                              <div class="parameters__parameter">Вес</div>
+                              <div class="parameters__dots"></div>
+                              <div class="parameters__value">0.2</div>
+                            </li><li class="parameters__item">
+                              <div class="parameters__parameter">Длина</div>
+                              <div class="parameters__dots"></div>
+                              <div class="parameters__value">7</div>
+                            </li><li class="parameters__item">
+                              <div class="parameters__parameter">Ширина</div>
+                              <div class="parameters__dots"></div>
+                              <div class="parameters__value">7</div>
+                            </li><li class="parameters__item">
+                              <div class="parameters__parameter">Высота</div>
+                              <div class="parameters__dots"></div>
+                              <div class="parameters__value">13</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+              <div class="product-card__right">
+                <div class="product-card__row">
+                  <div class="for-buyers  product-card__for-buyers">
+                    <div class="for-buyers__header">
+                      <svg class="for-buyers__icon" width="24" height="24">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#delivery"></use>
+                      </svg>
+                      <span class="for-buyers__title">Доставка</span>
+                    </div>
+                    <div class="for-buyers__body  text">
+                      <p>На сегодняшний день мы можем предложить Вам несколько способов доставки:</p>
+                      <p>1. Самовывоз. (СПб)</p>
+                      <p>2. Экспресс доставка курьером по Санкт-Петербургу (1-2 дня)<br><br>3. Экспресс доставка в пункты выдачи заказов (крупные и средние города России, <a href="https://boxberry.ru/find_an_office/">список &nbsp;тут</a>)</p>
+                    </div>
+                  </div>
+                  <div class="for-buyers  product-card__for-buyers">
+                    <div class="for-buyers__header">
+                      <svg class="for-buyers__icon" width="24" height="24">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#payment"></use>
+                      </svg>
+                      <span class="for-buyers__title">Оплата</span>
+                    </div>
+                    <div class="for-buyers__body  text">
+                      <ul>
+                        <li>Наличными при самовывозе</li>
+                        <li>Банковской картой при самовывозе</li>
+                        <li>Переводом на банковскую карту заранее</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-
-                <section class="text-block  catalog__text-block">
-                  <div class="text-block__text  text">
-                    <p><video width="100%" height="auto" controls="controls" autoplay>
-                      <source src="http://atlaskit.ru/userfls/ufiles/A_MG1077.mp4" type="video/mp4" /></video>
-                    </p>
-                    <p>С 2019 года компания Atlas Kit стала эксклюзивными и единственными поставщиком музыкальных деревянных заводных игрушек ручной работы Wooderful life. Данный бренд развивает производство деревянных игрушек более 40 лет и строго следит за качеством своего товара, так как до 90% продукции поставляет в самые развитые страны мира - США, Австралию, Сингапур, Южную Корею и т.д.</p>
-                    <p>На заводе работает более 8 тысяч человек, которые заботливо и аккуратно выполняют вручную большую часть мелкой декоративной работы. Данный бренд имеет не только магазины своей продукции, но так же студии по сбору игрушек своими руками, и даже целые тематические парки развлечений. Бренд также развивает экологичную направленность своей продукции и ответственно относится к окружающей среде: использует только сертифицированное дерево из США, Новой Зеландии и Канады, а также вкладывает средства в восполняемость лесов поставщиков</p>
-                  </div>
-                </section>
               </div>
             </div>
             <div class="text  page__text"></div>
           </main>
         </div>
       </div>
-        
  
       <form method="POST" class="block_defer_form js_block_defer_form shop_show_recent js_shop_show_recent ajax">
         <input type="hidden" name="attributes[name]" value="show_recent">
@@ -925,9 +669,27 @@
 
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/range.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    
+    <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 15,
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.gallery-next',
+        prevEl: '.gallery-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+  </script>
   </div>
 </body>
 </html>
