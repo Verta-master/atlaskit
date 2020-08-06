@@ -1679,6 +1679,7 @@ h2 {
 .filter__section .field-input {
   border-color: #E6E6E6;
 }
+.filter__max-price,
 .filter__price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1690,10 +1691,80 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
 }
+.filter__price {
+  margin-bottom: 10px;
+}
 .filter__price .field-input {
   width: 90px;
   margin-bottom: 0;
 }
 .filter__separator {
   line-height: 40px;
+}
+.filter__max-price {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+}
+.filter__range {
+  /* Ползунок */
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  /* позиционируем ползунки */
+  /* оформление полосы по которой ходит ползунок */
+  /* оформление активного участка (между двумя ползунками) */
+  /* скругление для полосы слайдера */
+}
+.filter__range .ui-slider {
+  position: relative;
+}
+.filter__range .ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #2BB622;
+  cursor: pointer;
+  outline: none;
+}
+.filter__range .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: 0.7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+.filter__range .ui-slider-horizontal {
+  height: 5px;
+}
+.filter__range .ui-slider-horizontal .ui-slider-handle {
+  top: -6px;
+  margin-left: -8px;
+}
+.filter__range .ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+.filter__range .ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.filter__range .ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+.filter__range .ui-widget-content {
+  border: 1px solid #999;
+  background-color: #999;
+}
+.filter__range .ui-widget-header {
+  border: 1px solid #2BB622;
+  background-color: #2BB622;
+}
+.filter__range .ui-corner-all {
+  border-radius: 4px;
+}
+.filter__range .ui-widget.ui-widget-content {
+  border: 0;
 }
