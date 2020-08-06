@@ -98,3 +98,30 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+
+.grid--with-sidebar {
+  .page__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page__sidebar {
+  width: 270px;
+}
+
+.page__main--with-sidebar {
+  width: ~"calc(100% - 300px)";
+}
+
+.grid--with-sidebar.page__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
+  padding-bottom: 50px;
+  
+  .product-block {
+    width: 25%;
+  }
+}
