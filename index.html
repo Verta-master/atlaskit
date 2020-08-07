@@ -147,24 +147,29 @@
       <path fill-rule="evenodd" clip-rule="evenodd" d="M8 6.6a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2zM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM12.582 13.146c.002-.003.018-.043.018-.146 0-.398-.28-1.022-1.148-1.616-.837-.573-2.058-.984-3.452-.984-1.385 0-2.605.42-3.447 1.002C3.673 12.01 3.4 12.636 3.4 13a.527.527 0 0 0 .013.12.124.124 0 0 0 .01.009c.047.043.214.156.648.256.895.206 2.207.214 3.929.214h.142c1.665 0 2.924 0 3.795-.195.432-.096.593-.207.636-.247l.01-.01s-.002.001 0-.001zm-4.318 1.853C11.455 15 14 15 14 13c0-2.056-2.686-4-6-4s-6 2-6 4c0 1.999 2.683 1.999 5.994 1.999h.27z" fill="currentColor"></path>
     </symbol>
   </svg>
+  
   <div class="page__canvas">
     <header class="header">
       <div class="header__top">
         <div class="header__left">
           <nav class="menu-mobile  header__menu-mobile">
-            <ul>
-              <li>
+            <button class="menu-mobile__btn"></button>
+            <ul class="menu-mobile__list">
+              <li class="menu-mobile__item">
                 <a href="http://atlaskit.ru/catalog/">Каталог</a>
-                <ul>
-                  <li><a href="http://atlaskit.ru/catalog/derevyannye-igrushki/">Музыкальные заводные игрушки </a></li>
-                  <li><a href="http://atlaskit.ru/catalog/knigi-panoramy/">Pop-up книги</a></li>
-                  <li><a href="http://atlaskit.ru/catalog/derevyannye-loshadki-kachalki-premium-klassa/">Деревянные лошадки-качалки </a></li>
+                <button class="menu-mobile__down">
+                  <svg width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dropdown-arrow"></use></svg>
+                </button>
+                <ul class="menu-mobile__sublist">
+                  <li class="menu-mobile__subitem"><a href="http://atlaskit.ru/catalog/derevyannye-igrushki/">Музыкальные заводные игрушки</a></li>
+                  <li class="menu-mobile__subitem"><a href="http://atlaskit.ru/catalog/knigi-panoramy/">Pop-up книги</a></li>
+                  <li class="menu-mobile__subitem"><a href="http://atlaskit.ru/catalog/derevyannye-loshadki-kachalki-premium-klassa/">Деревянные лошадки-качалки</a></li>
                 </ul>
               </li>
-              <li><a href="http://atlaskit.ru/about/">О нас</a></li>
-              <li><a href="http://atlaskit.ru/useful/">Доставка</a></li>
-              <li><a href="http://atlaskit.ru/oplata/">Оплата</a></li>
-              <li><a href="http://atlaskit.ru/kontakty/">Контакты</a></li>
+              <li class="menu-mobile__item"><a href="http://atlaskit.ru/about/">О нас</a></li>
+              <li class="menu-mobile__item"><a href="http://atlaskit.ru/useful/">Доставка</a></li>
+              <li class="menu-mobile__item"><a href="http://atlaskit.ru/oplata/">Оплата</a></li>
+              <li class="menu-mobile__item"><a href="http://atlaskit.ru/kontakty/">Контакты</a></li>
             </ul>
           </nav>
           <ul class="social-block__list">
@@ -900,6 +905,7 @@
 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+    <script src="js/menu.js"></script>
 
     <!-- Sliders -->
     <script>

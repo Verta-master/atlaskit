@@ -3,6 +3,7 @@
   .brend-carousel__wrapper,
   .page__wrapper,
   .menu__wrapper,
+  .categories-block__wrapper,
   .wrapper {
     width: 100%;
     padding-left: 15px;
@@ -15,20 +16,125 @@
   .footer__to-top {
     right: 15px;
   }
+  .slider__block .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .product-block {
+    width: 25%;
+  }
 }
 
 @media (max-width: 1022px) {
   .header__menu-service,
   .header .social-block__list,
-  .menu {
+  .menu-main,
+  .search-block {
     display: none;
   }
   .page__content {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .coupon-form,
   .page__form {
     width: 100%;
+  }
+  .clause-block {
+    width: 50%;
+  }
+  .product-block {
+    width: 33.33%;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .menu-mobile__btn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    
+    &--cross {
+      background-image: url(../img/icons/cross.svg);
+      background-size: 25px 25px;
+    }
+  }
+  .menu-mobile__list {
+    display: none;
+    .reset();
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background-color: #010315;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .menu-mobile__item {
+    position: relative;
+  }
+  .menu-mobile__item a {
+    display: block;
+    padding: 10px 15px;
+    padding-right: 35px;
+    
+    &:hover,
+    &:active {
+      color: #010315;
+      background-color: #fff;
+    }
+  }
+  .menu-mobile__sublist {
+    .reset();
+    list-style: none;
+    display: none;
+  }
+  .menu-mobile__subitem a {
+    display: block;
+    padding: 10px 30px;
+    
+    &:hover,
+    &:active {
+      color: #010315;
+      background-color: #fff;
+    }
+  }
+  .menu-mobile__down {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .header__logo {
+    width: auto;
+    max-width: 100%;
+    z-index: 10;
+    top: 50px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    transform: none;
+  }
+  .logo {
+    margin-right: 10px;
+  }
+  .header__description {
+    font-size: 14px;
+  }
+  .menu {
+    margin-top: 0;
+  }
+  .menu__wrapper {
+    padding: 0;
   }
 }
 
@@ -48,6 +154,7 @@
     justify-content: space-around;
     align-items: center;
   }
+  .categories-block__item,
   .coupon-form__button,
   .form__block .button,
   .form__block,
@@ -80,6 +187,7 @@
       font-weight: 500;
     }
   }
+  .categories-block__list,
   .footer__row,
   .table table tr {
     flex-direction: column;
@@ -123,6 +231,16 @@
   .footer__contacts-block {
     order: 2;
   }
+  .product-block {
+    width: 50%;
+  }
+  .slider__title,
+  h1, h2 {
+    font-size: 18px;
+  }
+  .slider__text {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -135,5 +253,45 @@
   .header__cart-block,
   .header__favorites-block {
     margin-left: 10px;
+  }
+  .clause-block,
+  .product-block {
+    width: 100%;
+  }
+  .phone {
+    position: relative;
+    z-index: 1;
+    
+    svg {
+      display: block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin-right: 0;
+    }
+  }
+  .phone__link {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+  }
+  .cart-block__link,
+  .favorites-block__link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    max-width: 120px;
+  }
+  .header__description {
+    font-size: 13px;
+    line-height: 1.3;
   }
 }
