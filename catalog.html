@@ -154,19 +154,23 @@
       <div class="header__top">
         <div class="header__left">
           <nav class="menu-mobile  header__menu-mobile">
-            <ul>
-              <li>
+            <button class="menu-mobile__btn"></button>
+            <ul class="menu-mobile__list">
+              <li class="menu-mobile__item">
                 <a href="http://atlaskit.ru/catalog/">Каталог</a>
-                <ul>
-                  <li><a href="http://atlaskit.ru/catalog/derevyannye-igrushki/">Музыкальные заводные игрушки </a></li>
-                  <li><a href="http://atlaskit.ru/catalog/knigi-panoramy/">Pop-up книги</a></li>
-                  <li><a href="http://atlaskit.ru/catalog/derevyannye-loshadki-kachalki-premium-klassa/">Деревянные лошадки-качалки </a></li>
+                <button class="menu-mobile__down">
+                  <svg width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dropdown-arrow"></use></svg>
+                </button>
+                <ul class="menu-mobile__sublist">
+                  <li class="menu-mobile__subitem"><a href="http://atlaskit.ru/catalog/derevyannye-igrushki/">Музыкальные заводные игрушки</a></li>
+                  <li class="menu-mobile__subitem"><a href="http://atlaskit.ru/catalog/knigi-panoramy/">Pop-up книги</a></li>
+                  <li class="menu-mobile__subitem"><a href="http://atlaskit.ru/catalog/derevyannye-loshadki-kachalki-premium-klassa/">Деревянные лошадки-качалки</a></li>
                 </ul>
               </li>
-              <li><a href="http://atlaskit.ru/about/">О нас</a></li>
-              <li><a href="http://atlaskit.ru/useful/">Доставка</a></li>
-              <li><a href="http://atlaskit.ru/oplata/">Оплата</a></li>
-              <li><a href="http://atlaskit.ru/kontakty/">Контакты</a></li>
+              <li class="menu-mobile__item"><a href="http://atlaskit.ru/about/">О нас</a></li>
+              <li class="menu-mobile__item"><a href="http://atlaskit.ru/useful/">Доставка</a></li>
+              <li class="menu-mobile__item"><a href="http://atlaskit.ru/oplata/">Оплата</a></li>
+              <li class="menu-mobile__item"><a href="http://atlaskit.ru/kontakty/">Контакты</a></li>
             </ul>
           </nav>
           <ul class="social-block__list">
@@ -928,6 +932,15 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/range.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+      $('.filter__toggle').bind('click', function () {
+        var $menu_list = $('.filter__wrapper');
+        return function () {
+          $menu_list.slideToggle();
+        }
+      }());
+    </script>
   </div>
 </body>
 </html>
