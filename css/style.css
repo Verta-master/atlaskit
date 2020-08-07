@@ -1572,7 +1572,7 @@ h2 {
           transform: translateX(-50%);
 }
 .grid--with-sidebar.page__row .product-block--view_list {
-  width: 100%;
+  width: 100% !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2195,6 +2195,9 @@ h2 {
   .product-block {
     width: 25%;
   }
+  .grid--with-sidebar.page__row .product-block {
+    width: 33.33%;
+  }
 }
 @media (max-width: 1022px) {
   .header__menu-service,
@@ -2206,6 +2209,7 @@ h2 {
   .page__content {
     margin-top: 40px;
   }
+  .page__main--with-sidebar,
   .coupon-form,
   .page__form {
     width: 100%;
@@ -2316,6 +2320,52 @@ h2 {
   }
   .menu__wrapper {
     padding: 0;
+  }
+  .page__wrapper {
+    padding-top: 80px;
+  }
+  .tabs__nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+  }
+  .grid--with-sidebar .page__row {
+    display: block;
+  }
+  .grid--with-sidebar.page__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .filter__toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 270px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .filter__wrapper {
+    display: none;
+  }
+  .button__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .button__wrapper svg {
+    margin-right: 10px;
   }
 }
 @media (max-width: 766px) {
@@ -2433,6 +2483,7 @@ h2 {
         -ms-flex-order: 2;
             order: 2;
   }
+  .grid--with-sidebar.page__row .product-block,
   .product-block {
     width: 50%;
   }
@@ -2440,9 +2491,13 @@ h2 {
   h1,
   h2 {
     font-size: 18px;
+    line-height: 1.3;
   }
   .slider__text {
     font-size: 16px;
+  }
+  .catalog__view-switch {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -2456,6 +2511,10 @@ h2 {
   .header__favorites-block {
     margin-left: 10px;
   }
+  .page__sidebar,
+  .filter__toggle,
+  .grid--with-sidebar.page__row .product-block,
+  .tabs__nav,
   .clause-block,
   .product-block {
     width: 100%;
@@ -2501,5 +2560,9 @@ h2 {
   .header__description {
     font-size: 13px;
     line-height: 1.3;
+  }
+  .sorting__list,
+  .sorting {
+    display: block;
   }
 }
