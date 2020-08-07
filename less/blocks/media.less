@@ -1,0 +1,139 @@
+@media (max-width: 1200px) {
+  .footer__wrapper,
+  .brend-carousel__wrapper,
+  .page__wrapper,
+  .menu__wrapper,
+  .wrapper {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .num__text-field {
+    width: 50px;
+  }
+  .search-block,
+  .footer__to-top {
+    right: 15px;
+  }
+}
+
+@media (max-width: 1022px) {
+  .header__menu-service,
+  .header .social-block__list,
+  .menu {
+    display: none;
+  }
+  .page__content {
+    margin-top: 50px;
+  }
+  .coupon-form,
+  .page__form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 766px) {
+  .cart_last_td,
+  .table table thead {
+    display: none !important;
+  }
+  .table table,
+  .table table tbody,
+  .table table td {
+    display: block;
+  }
+  .table table tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .coupon-form__button,
+  .form__block .button,
+  .form__block,
+  .form__body .field-textarea,
+  .form__body .form__field-block .form__field,
+  .form__field-block .form__label,
+  .form__field-block .form__field,
+  .cart_delivery {
+    width: 100%;
+  }
+  .form__field-block {
+    flex-direction: column;
+  }
+  .form__field-block .form__field {
+    margin-bottom: 10px;
+  }
+  .form__field-block .form__label {
+    margin-bottom: 5px;
+  }
+  .form__block {
+    margin-left: 0;
+  }
+  .table--responsive td {
+    position: relative;
+    text-align: center;
+    
+    &::before {
+      content: attr(data-label);
+      display: block;
+      font-weight: 500;
+    }
+  }
+  .footer__row,
+  .table table tr {
+    flex-direction: column;
+  }
+  .table__total {
+    flex-direction: row !important;
+  }
+  .table table td {
+    padding: 8px;
+  }
+  .radio-button--nolabel .radio-button__label {
+    padding-left: 20px;
+    font-size: 0;
+    height: 25px;
+  }
+  .footer__copyright {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .payments-block__list {
+    justify-content: center;
+  }
+  .footer__top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer__bottom {
+    padding-bottom: 20px;
+  }
+  .payments-block__item {
+    margin: 4px;
+  }
+  .footer__menu-footer {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .menu-footer__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer__contacts-block {
+    order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-block__num,
+  .favorites-block__text,
+  .cart-block__price {
+    display: none;
+  }
+  .header__account-block,
+  .header__cart-block,
+  .header__favorites-block {
+    margin-left: 10px;
+  }
+}
