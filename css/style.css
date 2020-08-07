@@ -515,7 +515,11 @@ h2 {
   width: 25%;
 }
 .header {
-  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 .header__menu-mobile {
   display: none;
@@ -629,7 +633,7 @@ h2 {
 }
 .header__logo {
   position: absolute;
-  top: 20px;
+  top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -687,13 +691,16 @@ h2 {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.menu {
+  margin-top: 60px;
+}
 .menu__wrapper {
   position: relative;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,7 +775,7 @@ h2 {
 }
 .search-block {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   right: 0;
   border: 1px solid #2b2a2a;
   border-radius: 3px;
@@ -2161,4 +2168,162 @@ h2 {
 }
 .form__policies {
   margin-bottom: 15px;
+}
+@media (max-width: 1200px) {
+  .footer__wrapper,
+  .brend-carousel__wrapper,
+  .page__wrapper,
+  .menu__wrapper,
+  .wrapper {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .num__text-field {
+    width: 50px;
+  }
+  .search-block,
+  .footer__to-top {
+    right: 15px;
+  }
+}
+@media (max-width: 1022px) {
+  .header__menu-service,
+  .header .social-block__list,
+  .menu {
+    display: none;
+  }
+  .page__content {
+    margin-top: 50px;
+  }
+  .coupon-form,
+  .page__form {
+    width: 100%;
+  }
+}
+@media (max-width: 766px) {
+  .cart_last_td,
+  .table table thead {
+    display: none !important;
+  }
+  .table table,
+  .table table tbody,
+  .table table td {
+    display: block;
+  }
+  .table table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .coupon-form__button,
+  .form__block .button,
+  .form__block,
+  .form__body .field-textarea,
+  .form__body .form__field-block .form__field,
+  .form__field-block .form__label,
+  .form__field-block .form__field,
+  .cart_delivery {
+    width: 100%;
+  }
+  .form__field-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__field-block .form__field {
+    margin-bottom: 10px;
+  }
+  .form__field-block .form__label {
+    margin-bottom: 5px;
+  }
+  .form__block {
+    margin-left: 0;
+  }
+  .table--responsive td {
+    position: relative;
+    text-align: center;
+  }
+  .table--responsive td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: 500;
+  }
+  .footer__row,
+  .table table tr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .table__total {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .table table td {
+    padding: 8px;
+  }
+  .radio-button--nolabel .radio-button__label {
+    padding-left: 20px;
+    font-size: 0;
+    height: 25px;
+  }
+  .footer__copyright {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .payments-block__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer__bottom {
+    padding-bottom: 20px;
+  }
+  .payments-block__item {
+    margin: 4px;
+  }
+  .footer__menu-footer {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 20px;
+  }
+  .menu-footer__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer__contacts-block {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media (max-width: 480px) {
+  .cart-block__num,
+  .favorites-block__text,
+  .cart-block__price {
+    display: none;
+  }
+  .header__account-block,
+  .header__cart-block,
+  .header__favorites-block {
+    margin-left: 10px;
+  }
 }
