@@ -1,0 +1,51 @@
+1) В секции head заменить стили и шрифты:
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
+
+2) полностью заменить header и следующий за ним блок <nav class="menu">
+
+3) Заменить секцию слайдера на главной <div class="slider  index__slider"> на новую  <section class="slider">
+
+и добавить линки для свипера:
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+<script>
+  var mySwiper = new Swiper ('.slider__promo', {
+	navigation: {
+	  nextEl: '.slider__next',
+	  prevEl: '.slider__prev',
+	},
+	simulateTouch: false,
+	preventClicks: false,
+	preventClicksPropagation: false,
+  });
+</script>
+
+4) Я отключила jquery.flextabs.min.js - он как-то странно работал, да и табов тут нет
+
+5) На модалки поставила fancybox
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+
+6) На странице каталога в фильтре заменила range-slider (у меня он вообще не работал по прежней разметке, а его тоже надо было стилизовать)
+Вместо строки 
+
+<div class="filter__slider" data-min="0" data-max="5500"></div></div>
+
+поставить:
+  <div class="filter__range">
+	<div id="slider-range"></div>
+  </div>
+
+а к инпутам с ценой добавить id="amount-min" и id="amount-max" и подключить скрипт range.js
+
+7) На карточке кнопка "Купить в 1 клик" сделала как ссылку под fancybox. В оригинале стоти input (закомментила)
+
+8) Там же в карточке блок product-gallery полностью заменила на swiper (там slick стоял) 
+
+9) Для адаптивного меню добавить новый скрипт <script src="js/menu.js"></script>
+Старый скрипт script.min.js я не использовала, посмотри сам, что нужно оттуда (переключатель вида для каталога там)
