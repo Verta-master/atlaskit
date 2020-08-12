@@ -2617,3 +2617,51 @@ h2 {
     margin-bottom: 0;
   }
 }
+.menu-main__item {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu-main__item:hover .menu-main__sublist {
+  display: block;
+}
+.menu-main__item:hover .menu-main__down {
+  color: #9d9d9d;
+}
+.menu-main__sublist {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  width: 270px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+}
+.menu-main__subitem a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2b2a2a;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: 2px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.menu-main__subitem a:hover,
+.menu-main__subitem a:active {
+  color: #9d9d9d;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.menu-main__down {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: block;
+  color: #2b2a2a;
+}
